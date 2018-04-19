@@ -17,4 +17,9 @@ public class CommonAPIChrome {
         chromeDriver = new ChromeDriver();
     }
 
+    @AfterMethod
+    public void after(){
+        chromeDriver.close();
+    }
+
 }

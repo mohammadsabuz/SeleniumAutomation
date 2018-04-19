@@ -4,6 +4,7 @@ import commonAPI.CommonAPIFirefox;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -28,5 +29,10 @@ public class LetsCodeIt extends CommonAPIFirefox {
             String optionName = options.get(i).getText();
             System.out.println(optionName);
         }
+    }
+
+    @AfterMethod
+    public void after(){
+        geckoDriver.close();
     }
 }

@@ -12,6 +12,7 @@
         <module>Generic</module>
         <module>Gmail</module>
         <module>Letscodeit</module>
+        <module>Amazon</module>
     </modules>
 
     <dependencyManagement>

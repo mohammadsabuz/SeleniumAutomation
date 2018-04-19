@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Amazon" />
         <module name="Generic" />
         <module name="Gmail" />
         <module name="Letscodeit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Amazon" target="1.5" />
       <module name="Generic" target="1.5" />
       <module name="Gmail" target="1.5" />
       <module name="Letscodeit" target="1.5" />
